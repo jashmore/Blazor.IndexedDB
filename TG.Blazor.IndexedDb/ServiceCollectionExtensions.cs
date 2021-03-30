@@ -7,7 +7,7 @@ namespace TG.Blazor.IndexedDB
     public static class ServiceCollectionExtensions
     {
         /// <summary>
-        /// Set up the DbStore and creats an instance IndexedDBManager as a singleton
+        /// Set up the DbStore and create an instance IndexedDBManager as a singleton
         /// </summary>
         /// <param name="services"></param>
         /// <param name="options">Action to set up the DbStore</param>
@@ -18,7 +18,7 @@ namespace TG.Blazor.IndexedDB
             options(dbStore);
 
             services.TryAddSingleton(dbStore);
-            services.AddScoped<IndexedDBManager , IndexedDBManager>();
+            services.AddScoped<IIndexedDBManager, IndexedDBManager>();
 
             return services;
         }

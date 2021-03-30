@@ -1,7 +1,7 @@
 ﻿@using Blazor.IndexedDB.Test.Models
 @using TG.Blazor.IndexedDB
 @implements IDisposable
-@inject IndexedDBManager DbManager
+@inject IIndexedDBManager DbManager
 <div>
 <p>To query by index select index and enter a value. This will return the first record that matches the value. <br />
    To get all the records that match a given value, check the "Return all matches" checkbox. <br />
