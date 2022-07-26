@@ -18,7 +18,7 @@ namespace TG.Blazor.IndexedDB
             options(dbStore);
 
             services.TryAddSingleton(dbStore);
-            services.AddScoped<IndexedDBManager , IndexedDBManager>();
+            services.AddScoped<IIndexedDBManager , IndexedDBManager>();
 
             return services;
         }

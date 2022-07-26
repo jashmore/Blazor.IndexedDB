@@ -9,7 +9,7 @@ namespace TG.Blazor.IndexedDB
     /// <summary>
     /// Provides functionality for accessing IndexedDB from Blazor application
     /// </summary>
-    public class IndexedDBManager
+    public class IndexedDBManager : IIndexedDBManager
     {
         private readonly DbStore _dbStore;
         private readonly IJSRuntime _jsRuntime;
